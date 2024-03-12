@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--enlace de hojas de estilo de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.o.o-beta2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"  integrity="sha384-BmbxuPwQa21c/FVzBcNJ7UAyJxM6wuqIj61tLrc4w5X0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous">
+    <!--enlace google fonts--> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=pangolinydisplay=swap"
+    rel="stylesheet">
+    <!--enlace javascript para sweetalert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>taller de calculadora php</title>
+</head>
+<body>
+    
+    <?php include "_header.php" ?>
+
+
+	<div class="well">Calculadora</div>
+
+	<form action="calcula.php" method="post">
+
+		A &nbsp <input type="number" name="numero_1" placeholder="tu numero aqui"/><br />
+		<br>
+		B &nbsp <input type="number" name="numero_2" placeholder="otro numero"/><br />
+
+		<br>         	
+        + &nbsp <input type="Checkbox" name="suma" value="suma" />
+        - &nbsp <input type="Checkbox" name="resta"value="resta"  /> 
+           * &nbsp <input type="Checkbox" name="multiplica"value="multiplica"  /> 
+        / &nbsp <input type="Checkbox" name="divide"value="divide" /> 
+
+
+        <br>          
+        <br>
+		<input type="submit"  class="btn btn-danger" name="submit" value="calcula" /><br />
+
+	</form>
+
+
+
+
+</body>
+</html>
